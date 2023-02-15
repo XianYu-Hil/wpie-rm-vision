@@ -7,5 +7,6 @@
 ## Linux
 
 ```bash
+sudo ln -s /usr/lib/gcc/x86_64-linux-gnu/[gcc版本号]/liblto_plugin.so /usr/lib/bfd-plugins/liblto_plugin.so
 
 ```
