@@ -2,22 +2,21 @@
     "plugins": [
         "code",
         "custom-favicon",
-        "theme-default",
+        "theme-comscore",
         "splitter",
         "anchor-navigation-ex",
-        "insert-logo"
+        "insert-logo",
+        "-lunr", "-search", "search-plus"
     ],
     "pluginsConfig": {
         "code": {
             "copyButtons": true
         },
         "favicon": "image/wpie.ico",
-        "theme-default": {
-            "showLevel": false
-        },
         "anchor-navigation-ex": {
             "showLevel": true,
-            "showGoTop": true
+            "showGoTop": true,
+            "multipleH1": false
         },
         "insert-logo": {
             "url": "image/wpie.png",

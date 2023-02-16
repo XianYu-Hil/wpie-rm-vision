@@ -6,7 +6,7 @@
 
 目前仅为 demo 测试站点，后续可能会有较大改动。
 
-目前选用方案为：XianYuHil 本地开发 + Github 存储源码并托管网页 + TecentCloud 提供域名与 CDN 加速
+目前选用方案为：XianYuHil 本地开发 + Github 存储源码并托管网页 + TencentCloud 提供域名与 CDN 加速
 
 ## 结构
 
