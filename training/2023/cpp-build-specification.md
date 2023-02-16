@@ -78,6 +78,7 @@ g++ main.cpp core/common.cpp core/definition.cpp core/core.cpp io/console.cpp io
 ### 从几个例子出发
 
 - 我们先来看看一个CMakeLists.txt的最小组成
+
 ```cmake
 cmake_minimum_required(VERSION 3.19)       # 指定支持的最低CMake版本
 
@@ -85,7 +86,9 @@ project(HelloWorld)                        # 指定项目名
 
 add_executable(HelloWorld main.cpp)        # 指示CMake创建一个新目标：可执行文件HelloWorld。这个可执行文件是通过编译和链接源文件main.cpp生成的。
 ```
+
 - 当项目包含了许多我们编写的库文件时
+
 ```cmake
 cmake_minimum_required(VERSION 3.22)
 project(CFinalWork)
@@ -101,6 +104,7 @@ aux_source_directory(./src/User USER_SRC_FILES)
 
 add_executable(${PROJECT_NAME} ${SRC_FILES} ${CORE_SRC_FILES} ${DATA_SRC_FILES} ${IO_SRC_FILES} ${UI_SRC_FILES} ${USER_SRC_FILES})
 ```
+
 - 当项目需要链接OpenCV时
 
 ```cmake
@@ -115,7 +119,9 @@ add_executable(${PROJECT_NAME} main.cpp)    # 指示CMake创建目标
 
 target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS}) # 链接OpenCV库
 ```
+
 - 一个真正的大项目
+
 ```cmake
 cmake_minimum_required(VERSION 3.22)
 project(infantry_visual)
@@ -223,6 +229,7 @@ cmake_minimum_required(VERSION <min>)
 ```
 
 #### 给工程起个名字
+
 ```cmake
 project(<PROJECT-NAME> [LANGUAGES] [<language-name>...])
 ```
@@ -232,25 +239,29 @@ project(<PROJECT-NAME> [LANGUAGES] [<language-name>...])
 ```cmake
 include_directories([AFTER|BEFORE] [SYSTEM] dir1 [dir2 ...])
 ```
+
 #### 让CMake找到我的源文件
+
 ```cmake
 aux_source_directory(<dir> <variable>)
 ```
 #### 让CMake找到我的库文件
+
 ```cmake
 link_directories(directory1 directory2 ...)
 ```
 
 #### 告诉CMake我的构建目标
+
 ```cmake
 add_executable(<name> [WIN32] [MACOSX_BUNDLE] [EXCLUDE_FROM_ALL] source1 [source2 ...])
 ```
 
 #### 告诉CMake我要链接哪个库文件
+
 ```cmake
 target_link_libraries(<target> [item1 [item2 [...]]] [[debug|optimized|general] <item>] ...)
 ```
-
 
 ### 相关教程
 
