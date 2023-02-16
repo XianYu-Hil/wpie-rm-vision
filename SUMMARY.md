@@ -17,5 +17,8 @@
   - [Linux 下编译 OpenCV + Contrib](tutorial/linux-compile-opencv.md)
   - [Ubuntu 下配置 CLion 远程开发](tutorial/clion-remote-development.md)
   - [NUC 配置网线连接NoMachine](tutorial/nuc-network-cable-nomachine.md)
+  - [Ubuntu 开机自启](tutorial/self-boot-program.md)
+  - [sudo 免密](tutorial/sudo-free-pwd.md)
+  - [串口缺少权限修复](tutorial/serial-miss-permission.md)
 - [杂项](misc/README.md)
   - [常用编译器选项](misc/common-compiler-option.md)
