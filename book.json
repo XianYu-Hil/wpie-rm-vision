@@ -1,0 +1,17 @@
+{
+    "plugins": [
+        "code",
+        "back-to-top-button",
+        "custom-favicon",
+        "theme-default"
+    ],
+    "pluginsConfig": {
+        "code": {
+            "copyButtons": true
+        },
+        "favicon": "wpie.ico",
+        "theme-default": {
+            "showLevel": true
+        }
+    }
+}
