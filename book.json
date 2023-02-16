@@ -1,17 +1,28 @@
 {
     "plugins": [
         "code",
-        "back-to-top-button",
         "custom-favicon",
-        "theme-default"
+        "theme-default",
+        "splitter",
+        "anchor-navigation-ex",
+        "insert-logo"
     ],
     "pluginsConfig": {
         "code": {
             "copyButtons": true
         },
-        "favicon": "wpie.ico",
+        "favicon": "image/wpie.ico",
         "theme-default": {
-            "showLevel": true
+            "showLevel": false
+        },
+        "anchor-navigation-ex": {
+            "showLevel": true,
+            "showGoTop": true
+        },
+        "insert-logo": {
+            "url": "image/wpie.png",
+            "style": "background: none; max-height: 30px; min-height: 30px"
         }
     }
 }
+
