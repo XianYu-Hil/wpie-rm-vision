@@ -1,8 +1,6 @@
 # Ubuntu 开机自启
 
-
 ## 程序
-
 
 - 在 /usr/share/applications 下创建一个 `.desktop` 文件，文件名是需要开机自启的可执行文件。后缀为 `(application/x-sharedlib)`。
 
@@ -26,7 +24,7 @@ Type=Application
 Categories=System;Utility;Archiving;
 ```
 
-    `/path/to/application/directory/` 请修改为可执行文件所在目录。`./application-to-boot` 请修改为可执行文件名。
+`/path/to/application/directory/` 请修改为可执行文件所在目录。`./application-to-boot` 请修改为可执行文件名。
 
 - 保存并将该文件拷贝到/etc/xdg/autostart目录下
 
@@ -51,11 +49,13 @@ while true;
 do
 if [ ! $check ] 
 then
-/path/to/application
+cd /path/to/application/directory/
+./application-to-boot
 fi 
 done
 ```
-    `/path/to/application` 请修改为可执行文件路径
+
+`/path/to/application/directory/` 请修改为可执行文件所在目录。`./application-to-boot` 请修改为可执行文件名。
 
 - 请先进行测试以确保看门狗脚本无误
 
@@ -78,6 +78,6 @@ Name=watch-dog
 Comment=Watch Dog
 ```
 
-    `/path/to/watch_dog.sh` 请修改为看门狗脚本路径。
+`/path/to/watch_dog.sh` 请修改为看门狗脚本路径。
 
-为了安全起见，**开启自启不能与看门狗启动同一个程序！**比如不能看门狗启动Visual，开机自启也启动Visual。
+为了安全起见， **开启自启不能与看门狗启动同一个程序！** 比如不能看门狗启动Visual，开机自启也启动Visual。

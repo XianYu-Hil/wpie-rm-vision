@@ -6,21 +6,28 @@
         "splitter",
         "anchor-navigation-ex",
         "insert-logo",
-        "-lunr", "-search", "search-plus"
+        "-lunr", "-search", "search-plus",
+        "tbfed-pagefooter",
+        "pageview-count"
     ],
     "pluginsConfig": {
         "code": {
             "copyButtons": true
         },
-        "favicon": "image/wpie.ico",
+        "favicon": "/image/wpie.ico",
         "anchor-navigation-ex": {
             "showLevel": true,
             "showGoTop": true,
             "multipleH1": false
         },
         "insert-logo": {
-            "url": "image/wpie.png",
+            "url": "/image/wpie.png",
             "style": "background: none; max-height: 30px; min-height: 30px"
+        },
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy W.PIE 2023",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
         }
     }
 }
